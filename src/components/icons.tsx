@@ -72,6 +72,28 @@ export function HeartIcon({ className, filled }: { className?: string; filled?: 
   );
 }
 
+export function PhoneIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className}>
+      <path
+        d="M4.5 4.5h3.2l1.5 4-2 1.5a12 12 0 0 0 5.8 5.8l1.5-2 4 1.5v3.2c0 1-1 1.7-1.9 1.4-4-1-9.8-4.5-11.9-11.5A2 2 0 0 1 4.5 4.5Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function MailIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className}>
+      <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function BuildingIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className}>
