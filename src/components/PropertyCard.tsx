@@ -18,7 +18,7 @@ export default function PropertyCard({
 
   return (
     <div className="group rounded-2xl border border-navy-100 bg-white overflow-hidden hover:shadow-lg transition-shadow">
-      <Link href={`/buy/${property.slug}`} className="block">
+      <Link href={`/property/${property.slug}`} className="block">
         <div className="relative aspect-[4/3] overflow-hidden">
           <PropertyImage
             type={property.type}
@@ -57,7 +57,7 @@ export default function PropertyCard({
         <p className="font-heading text-xl font-bold text-navy-900">
           {formatPrice(property)}
         </p>
-        <Link href={`/buy/${property.slug}`}>
+        <Link href={`/property/${property.slug}`}>
           <p className="mt-1 text-sm font-semibold text-navy-800 hover:text-teal-600 line-clamp-1">
             {property.title}
           </p>

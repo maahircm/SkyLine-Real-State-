@@ -24,11 +24,13 @@ export default async function PropertyDetailPage({
   const fallbackSimilar = properties.filter((p) => p.id !== property.id).slice(0, 3);
   const similarProperties = similar.length > 0 ? similar : fallbackSimilar;
 
+  const backHref = property.status === "For Rent" ? "/rent" : "/buy";
+
   const estMortgage = Math.round((property.price * 0.9 * 0.055) / 12 / 100) * 100;
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Link href="/buy" className="text-sm text-teal-600 hover:text-teal-700 font-medium">
+      <Link href={backHref} className="text-sm text-teal-600 hover:text-teal-700 font-medium">
         ← Back to listings
       </Link>
 
